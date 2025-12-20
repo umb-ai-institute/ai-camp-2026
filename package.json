@@ -1,5 +1,5 @@
 {
-  "name": "umb-ai-institute",
+  "name": "ai-camp-2026",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -11,3 +11,4 @@
     "astro": "^4.0.0"
   }
 }
+
