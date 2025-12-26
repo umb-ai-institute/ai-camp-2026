@@ -1,8 +1,73 @@
 ---
 const title = "PEAAII 2026 AI Summer Camp";
+
+/**
+ * Edit these placeholders and you’re done.
+ * You can also move these into a separate file later, but keeping it simple is totally fine.
+ */
+const camp = {
+  org: "Paul English Applied AI Institute (PEAAII)",
+  name: "AI Summer Camp",
+  year: "2026",
+
+  // Summer Camp Info
+  tagline: "A hands-on introduction to AI through guided labs and team projects.",
+  description:
+    "Students explore how modern AI works, build small projects, and discuss how to use AI responsibly. No prior AI experience required—just curiosity and willingness to learn.",
+  bullets: [
+    "Beginner-friendly: concepts explained from the ground up",
+    "Hands-on labs and a final mini-project showcase",
+    "Ethics, privacy, and real-world AI use cases",
+  ],
+
+  // General info (placeholders)
+  quickFacts: [
+    { label: "Dates", value: "TBD (Summer 2026)" },
+    { label: "Time", value: "TBD" },
+    { label: "Location", value: "UMass Boston (TBD)" },
+    { label: "Audience", value: "TBD (e.g., Grades 9–12)" },
+  ],
+
+  // Registration Info
+  registration: {
+    price: "TBD",
+    deadline: "TBD",
+    capacity: "TBD",
+    formUrl: "https://forms.microsoft.com/", // paste the real Microsoft Form link here
+    note:
+      "Registration details will be finalized soon. The form link will remain the official registration method.",
+  },
+
+  // Contact
+  contactEmail: "aiinstitute@umb.edu", // replace if needed
+};
+
+const team = [
+  {
+    name: "Professor Name",
+    role: "Program Lead / Instructor",
+    photoUrl: "", // optional: "/images/prof1.jpg"
+    bio:
+      "Short 2–3 sentence bio. Include research/teaching areas, and a fun camp-relevant detail (e.g., hands-on learning focus).",
+  },
+  {
+    name: "Assistant Name",
+    role: "Teaching Assistant",
+    photoUrl: "",
+    bio:
+      "Short 2–3 sentence bio. Mention what they’ll help with (labs, projects, office hours, mentoring).",
+  },
+  {
+    name: "Assistant Name",
+    role: "Teaching Assistant",
+    photoUrl: "",
+    bio:
+      "Short 2–3 sentence bio. You can keep these consistent in length for a clean look.",
+  },
+];
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,52 +77,539 @@ const title = "PEAAII 2026 AI Summer Camp";
       name="description"
       content="Official website of the Paul English Applied AI Institute (PEAAII) 2026 AI Summer Camp."
     />
+
     <style>
+      :root {
+        --bg: #0b1020;
+        --surface: rgba(255, 255, 255, 0.06);
+        --surface-2: rgba(255, 255, 255, 0.1);
+        --text: #e5e7eb;
+        --muted: rgba(229, 231, 235, 0.75);
+        --border: rgba(255, 255, 255, 0.12);
+        --shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+
+        --brand-1: #60a5fa; /* blue */
+        --brand-2: #a78bfa; /* violet */
+        --accent: #34d399; /* green */
+      }
+
+      * { box-sizing: border-box; }
+
       body {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
         margin: 0;
-        background: #f9fafb;
-        color: #111827;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        color: var(--text);
+        background: radial-gradient(
+            900px 500px at 15% 10%,
+            rgba(96, 165, 250, 0.26),
+            transparent 60%
+          ),
+          radial-gradient(
+            800px 450px at 90% 15%,
+            rgba(167, 139, 250, 0.22),
+            transparent 55%
+          ),
+          radial-gradient(
+            900px 600px at 35% 100%,
+            rgba(52, 211, 153, 0.18),
+            transparent 60%
+          ),
+          linear-gradient(180deg, #070a14, #0b1020);
+        min-height: 100vh;
       }
-      header {
-        background: #0f172a;
-        color: white;
-        padding: 3rem 1.5rem;
+
+      a { color: inherit; }
+
+      .container {
+        max-width: 1050px;
+        margin: 0 auto;
+        padding: 0 1.25rem;
       }
-      main {
-        max-width: 900px;
-        margin: 3rem auto;
-        padding: 0 1.5rem;
+
+      /* Top nav */
+      .topbar { padding: 1rem 0; }
+      .topbar-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
       }
-      footer {
-        text-align: center;
-        padding: 2rem;
-        color: #6b7280;
+      .brand {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.15;
+      }
+      .brand strong { font-size: 0.95rem; letter-spacing: 0.01em; }
+      .brand span { font-size: 0.85rem; color: var(--muted); }
+
+      .navlinks {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .navlinks a {
+        text-decoration: none;
+        padding: 0.45rem 0.75rem;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.06);
+        color: var(--muted);
         font-size: 0.9rem;
+      }
+      .navlinks a:hover { background: rgba(255, 255, 255, 0.1); color: var(--text); }
+
+      /* Hero */
+      header.hero { padding: 1.5rem 0 1.25rem; }
+
+      .hero-card {
+        border: 1px solid var(--border);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.08),
+          rgba(255, 255, 255, 0.04)
+        );
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: var(--shadow);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-card:before {
+        content: "";
+        position: absolute;
+        inset: -2px;
+        background: radial-gradient(
+            550px 220px at 20% 0%,
+            rgba(96, 165, 250, 0.35),
+            transparent 60%
+          ),
+          radial-gradient(
+            450px 220px at 90% 10%,
+            rgba(167, 139, 250, 0.28),
+            transparent 55%
+          );
+        pointer-events: none;
+        opacity: 0.9;
+      }
+
+      .hero-grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        gap: 1.5rem;
+        align-items: start;
+      }
+
+      @media (max-width: 900px) {
+        .hero-grid { grid-template-columns: 1fr; }
+      }
+
+      h1 {
+        margin: 0.4rem 0 0.75rem;
+        font-size: clamp(2rem, 4vw, 3rem);
+        letter-spacing: -0.02em;
+      }
+
+      .subhead {
+        margin: 0 0 1.25rem;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.6;
+        max-width: 65ch;
+      }
+
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-top: 1rem;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        border-radius: 12px;
+        padding: 0.75rem 1rem;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.08);
+        text-decoration: none;
+        font-weight: 650;
+        transition: transform 120ms ease, background 120ms ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+        background: rgba(255, 255, 255, 0.11);
+      }
+
+      .btn.primary {
+        border-color: rgba(96, 165, 250, 0.35);
+        background: linear-gradient(
+          135deg,
+          rgba(96, 165, 250, 0.28),
+          rgba(167, 139, 250, 0.22)
+        );
+      }
+
+      .btn.primary:hover {
+        background: linear-gradient(
+          135deg,
+          rgba(96, 165, 250, 0.34),
+          rgba(167, 139, 250, 0.28)
+        );
+      }
+
+      .info-box {
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 16px;
+        padding: 1rem;
+      }
+
+      .info-title {
+        margin: 0 0 0.75rem;
+        font-size: 0.95rem;
+        color: rgba(229, 231, 235, 0.95);
+      }
+
+      .info-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 0.65rem;
+      }
+
+      .info-item {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        gap: 0.75rem;
+        align-items: start;
+        padding: 0.65rem 0.75rem;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .info-item strong {
+        color: var(--muted);
+        font-size: 0.85rem;
+        font-weight: 650;
+      }
+
+      /* Sections */
+      main { padding: 0.5rem 0 2.5rem; }
+
+      section { margin-top: 1.75rem; }
+
+      .section-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 0.75rem;
+      }
+
+      .section-title {
+        margin: 0;
+        font-size: 1.2rem;
+        letter-spacing: -0.01em;
+      }
+
+      .section-note {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .card {
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 16px;
+        padding: 1rem;
+      }
+
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+      @media (max-width: 950px) {
+        .grid-3 { grid-template-columns: 1fr; }
+      }
+
+      .bullets {
+        margin: 0.5rem 0 0;
+        padding-left: 1.15rem;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      /* Registration */
+      .reg {
+        border: 1px solid rgba(96, 165, 250, 0.35);
+        background: linear-gradient(
+          135deg,
+          rgba(96, 165, 250, 0.18),
+          rgba(167, 139, 250, 0.12)
+        );
+        border-radius: 18px;
+        padding: 1.25rem;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      @media (max-width: 700px) {
+        .reg { grid-template-columns: 1fr; }
+      }
+
+      .reg h3 { margin: 0 0 0.25rem; font-size: 1.05rem; }
+      .reg p { margin: 0.25rem 0 0; color: rgba(229,231,235,0.85); line-height: 1.55; }
+
+      .reg-meta {
+        display: grid;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .reg-meta span strong { color: rgba(229,231,235,0.95); }
+
+      /* Team cards */
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+      @media (max-width: 1000px) {
+        .team-grid { grid-template-columns: 1fr; }
+      }
+
+      .person {
+        display: grid;
+        grid-template-columns: 64px 1fr;
+        gap: 0.9rem;
+        align-items: start;
+      }
+
+      .avatar {
+        width: 64px;
+        height: 64px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        background: rgba(255, 255, 255, 0.08);
+        display: grid;
+        place-items: center;
+        color: rgba(229,231,235,0.85);
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        overflow: hidden;
+      }
+
+      .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .person h3 {
+        margin: 0;
+        font-size: 1.02rem;
+      }
+
+      .role {
+        margin: 0.15rem 0 0.55rem;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .bio {
+        margin: 0;
+        color: rgba(229,231,235,0.82);
+        line-height: 1.6;
+      }
+
+      /* Footer */
+      footer {
+        padding: 2rem 0 2.5rem;
+        color: rgba(229, 231, 235, 0.65);
+        font-size: 0.9rem;
+        text-align: center;
+      }
+
+      .fineprint {
+        margin-top: 0.5rem;
+        color: rgba(229, 231, 235, 0.55);
+        font-size: 0.85rem;
       }
     </style>
   </head>
 
   <body>
-    <header>
-      <h1>Paul English Applied AI Institute</h1>
-      <p>2026 AI Summer Camp</p>
+    <!-- Top bar -->
+    <div class="container topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <strong>{camp.org}</strong>
+          <span>{camp.year} {camp.name}</span>
+        </div>
+
+        <nav class="navlinks" aria-label="Page sections">
+          <a href="#camp-info">Summer Camp Info</a>
+          <a href="#registration">Registration</a>
+          <a href="#team">Meet the Team</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <header class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <div class="hero-grid">
+            <div>
+              <h1>{camp.year} {camp.name}</h1>
+              <p class="subhead">{camp.tagline}</p>
+
+              <div class="cta-row">
+                <a class="btn primary" href="#registration">Register</a>
+                <a class="btn" href="#camp-info">Learn more</a>
+                <a class="btn" href={"mailto:" + camp.contactEmail}>Contact</a>
+              </div>
+            </div>
+
+            <aside class="info-box" aria-label="Quick facts">
+              <p class="info-title">Quick facts</p>
+              <ul class="info-list">
+                {camp.quickFacts.map((item) => (
+                  <li class="info-item">
+                    <strong>{item.label}</strong>
+                    <span>{item.value}</span>
+                  </li>
+                ))}
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
-      <p>
-        Welcome to the official website of the
-        <strong>Paul English Applied AI Institute (PEAAII) 2026 AI Summer Camp</strong>.
-      </p>
+      <div class="container">
+        <!-- 1) Summer Camp Info -->
+        <section id="camp-info" aria-label="Summer Camp Info">
+          <div class="section-head">
+            <h2 class="section-title">Summer Camp Info</h2>
+            <p class="section-note">Overview, what students will do, and what to expect</p>
+          </div>
 
-      <p>
-        Program details, curriculum highlights, and application information
-        will be released soon.
-      </p>
+          <div class="grid-3">
+            <div class="card">
+              <h3>About the camp</h3>
+              <p class="section-note">{camp.description}</p>
+            </div>
+
+            <div class="card">
+              <h3>What you’ll do</h3>
+              <ul class="bullets">
+                {camp.bullets.map((b) => (
+                  <li>{b}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Good to know</h3>
+              <p class="section-note">
+                This page will be updated as details are finalized. Check back for
+                schedule specifics, curriculum highlights, and final dates.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2) Registration Info -->
+        <section id="registration" aria-label="Registration Info">
+          <div class="section-head">
+            <h2 class="section-title">Registration</h2>
+            <p class="section-note">Pricing, deadlines, and the official registration link</p>
+          </div>
+
+          <div class="reg">
+            <div>
+              <h3>Register via Microsoft Form</h3>
+              <p>{camp.registration.note}</p>
+
+              <div class="reg-meta">
+                <span><strong>Price:</strong> {camp.registration.price}</span>
+                <span><strong>Deadline:</strong> {camp.registration.deadline}</span>
+                <span><strong>Capacity:</strong> {camp.registration.capacity}</span>
+              </div>
+            </div>
+
+            <a
+              class="btn primary"
+              href={camp.registration.formUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Registration Form
+            </a>
+          </div>
+        </section>
+
+        <!-- 3) Professor/Assistant bios -->
+        <section id="team" aria-label="Professor and Assistant Bios">
+          <div class="section-head">
+            <h2 class="section-title">Meet the Team</h2>
+            <p class="section-note">Professors and assistants running the camp</p>
+          </div>
+
+          <div class="team-grid">
+            {team.map((p) => (
+              <div class="card">
+                <div class="person">
+                  <div class="avatar" aria-hidden="true">
+                    {p.photoUrl ? (
+                      <img src={p.photoUrl} alt={`${p.name} photo`} />
+                    ) : (
+                      <span>{p.name.split(" ").map((x) => x[0]).join("").slice(0, 2).toUpperCase()}</span>
+                    )}
+                  </div>
+
+                  <div>
+                    <h3>{p.name}</h3>
+                    <p class="role">{p.role}</p>
+                    <p class="bio">{p.bio}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
-      © 2026 Paul English Applied AI Institute
+      <div class="container">
+        © {camp.year} {camp.org}
+        <div class="fineprint">
+          Questions? Email <a href={"mailto:" + camp.contactEmail}>{camp.contactEmail}</a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
+
