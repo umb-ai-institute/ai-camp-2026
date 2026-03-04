@@ -11,11 +11,11 @@ const camp = {
   description:
     "The Paul English Applied AI Institute (PEAAII) AI Summer Camp at the University of Massachusetts Boston is a modular, flexible program designed for both short-term participation and a continuous multi-week learning experience. Students may enroll in 1 to 5 weeks between July 27 – August 28, 2026. Each week focuses on a different AI topic and includes hands-on labs and project-based learning.",
   bullets: [
-    "Week 1 - Train a simple image classifier or chatbot",
-    "Week 2 - Real-time object detection on Raspberry PI Vision-guided robotic arm for object sorting",
-    "Week 3 - Text sentiment analyzer or story generator",
-    "Week 4 - Generate art, music, or memes",
-    "Week 5 - Group project tackling a real-world problem",
+    "Week 1 - Introduction to AI & Machine Learning",
+    "Week 2 - Neural Networks & Computer Vision",
+    "Week 3 - Natural Language Processing",
+    "Week 4 - Generative AI & Creativity",
+    "Week 5 - Inside Intelligence: A Journey into Minds & Machines",
   ],
 
   // General info
@@ -28,9 +28,12 @@ const camp = {
 
   // Registration Info
   registration: {
-    price: "TBD",
-    deadline: "TBD",
-    capacity: "TBD",
+    tuition: "Full 5 Weeks: $9,000 (Recommended)
+Any 4 Weeks: $7,400
+Any 3 Weeks: $5,700
+Any 2 Weeks: $3,900
+Any 1 Week: $2,000",
+    deadline: "April 15, 2026",
     formUrl: "https://forms.gle/xtcpMArT4BBZ6CRK7", // paste the Microsoft Form link here
     note:
       "Please apply via our Google Application form.",
@@ -578,7 +581,7 @@ const team = [
             </div>
 
             <div class="card">
-              <h3>What Students will do (examples):</h3>
+              <h3>Weekly Topics:</h3>
               <ul class="bullets">
                 {camp.bullets.map((b) => (
                   <li>{b}</li>
