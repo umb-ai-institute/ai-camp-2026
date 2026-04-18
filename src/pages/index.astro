@@ -5,114 +5,159 @@ const camp = {
   org: "Paul English Applied Artificial Intelligence Institute (PEAAII)",
   name: "AI Summer Camp",
   year: "2026",
+  slogan: "AI Unbounded.",
+  tagline:
+    "A hands-on, beginner-friendly AI summer program for high school students at UMass Boston.",
 
-  // Summer Camp Info
-  tagline: "A hands-on introduction to AI through guided labs and team projects.",
   description:
-    "The Paul English Applied AI Institute (PEAAII) AI Summer Camp at the University of Massachusetts Boston is a modular, flexible program designed for both short-term participation and a continuous multi-week learning experience. Students may enroll in 1 to 5 weeks between July 27 – August 28, 2026. Each week focuses on a different AI topic and includes hands-on labs and project-based learning.",
-  bullets: [
-    "Week 1 - Introduction to AI & Machine Learning",
-    "Week 2 - Neural Networks & Computer Vision",
-    "Week 3 - Natural Language Processing",
-    "Week 4 - Generative AI & Creativity",
-    "Week 5 - Inside Intelligence: A Journey into Minds & Machines",
+    "The PEAAII AI Summer Camp at the University of Massachusetts Boston is designed for students with no prior research experience. Through story-driven teaching, hands-on labs, guided practice, and team projects, students learn the foundations of artificial intelligence and research methodology while building their own portfolio-ready work.",
+
+  outcomes: [
+    "Identify meaningful problems through real-world observation",
+    "Formulate strong research questions",
+    "Search for and evaluate academic resources",
+    "Design experiments and test hypotheses",
+    "Analyze data and draw conclusions",
+    "Build a structured research mindset",
+    "Develop and present a final AI project prototype",
   ],
 
-  // General info
+  weeklyTopics: [
+    "Week 1 — Introduction to AI & Machine Learning",
+    "Week 2 — Neural Networks & Computer Vision",
+    "Week 3 — Speech & Natural Language Processing",
+    "Week 4 — Generative AI & Creativity",
+    "Week 5 — Inside Intelligence: A Journey into Minds & Machines",
+  ],
+
   quickFacts: [
-    { label: "Dates", value: "July 27th - August 28th, Monday - Friday" },
-    { label: "Time", value: "9:00 AM - 4:00 PM" },
-    { label: "Location", value: "UMass Boston, Room: TBD" },
+    { label: "Dates", value: "July 27 – August 28, 2026" },
+    { label: "Time", value: "9:00 AM – 5:00 PM" },
+    { label: "Format", value: "Hybrid: Mon & Fri on campus, Tue–Thu remote" },
     { label: "Audience", value: "Grades 8–12" },
+    { label: "Location", value: "UMass Boston, Boston, MA" },
   ],
 
-  // Registration Info
+  highlights: [
+    "Multi-level mentorship",
+    "Beginner to research-ready",
+    "Continuous project development",
+    "Portfolio of AI projects",
+    "Micro-credential certification",
+    "Small cohort learning",
+  ],
+
+  formatDetails: [
+    "Monday & Friday: On-campus at UMass Boston",
+    "Tuesday–Thursday: Remote via Zoom",
+    "Pizza provided on in-person days",
+    "Lectures + Labs + Practice + Discussions + Mentoring",
+  ],
+
   registration: {
-    tuition: `Full 5 Weeks: $9,000 (Recommended)
-Any 4 Weeks: $7,400
-Any 3 Weeks: $5,700
-Any 2 Weeks: $3,900
-Any 1 Week: $2,000`,
-    deadline: "Rolling Admission (until full)",
-    formUrl: "https://forms.gle/xtcpMArT4BBZ6CRK7", // paste the Google Form link here
-    note:
-      "Please apply using our Google Application form.",
+    weekly: "$899/week",
+    full: "$4,495 full program",
+    deadline: "Rolling admission until full",
+    formUrl: "https://forms.gle/xtcpMArT4BBZ6CRK7",
+    note: "Apply using our official Google Application Form.",
   },
 
-  // Contact
-  contactEmail: "ai@umb.edu", // when they click "contact" this will be the default email that the email platform primes to send to
+  syllabi: [
+    {
+      title: "Week 1 — Introduction to AI & Machine Learning",
+      href: "/Syllabus_Wan.pdf",
+    },
+    {
+      title: "Week 2 — Neural Networks & Computer Vision",
+      href: "/Bo_camp_syllabus.pdf",
+    },
+    {
+      title: "Week 3 — Speech & Natural Language Processing",
+      href: "/Syllabus_Xiaohui.pdf",
+    },
+    {
+      title: "Week 4 — Generative AI & Creativity",
+      href: "/2026_PEAAII_Shichao Pei - V4.pdf",
+    },
+    {
+      title: "Week 5 — Inside Intelligence: A Journey into Minds & Machines",
+      href: "/Ping_Chen_AI_Summer_Camp_Syllabus.pdf",
+    },
+  ],
+
+  contactEmail: "ai@umb.edu",
 };
 
 const team = [
   {
     name: "Professor Wei Ding",
     role: "Executive Director, PEAAII",
-    photoUrl: "", // optional: "/images/prof1.jpg"
+    photoUrl: "/images/wei-ding.jpg",
     bio:
-      "Dr. Ding combines expertise in AI, data mining, machine learning, and ​computational semantics—applied in healthcare and environmental, astronomical, and geological sciences—with a deep ​knowledge of UMass Boston and a strong connection to students, gained over 14 years on the faculty.  As the executive director, she facilitates the PEAAII Lead Planning Team, coordinates the curricular working group, and supports and ​consults with the Student Advisory Council. Wei balances leading the institute with teaching ​while also fulfilling significant responsibilities as PI on significant externally sponsored research projects.",
+      "Dr. Ding combines expertise in AI, data mining, machine learning, and computational semantics with a deep knowledge of UMass Boston and a strong commitment to student-centered innovation and applied AI education.",
   },
   {
     name: "Professor Ping Chen",
     role: "Professor",
-    photoUrl: "",
+    photoUrl: "/images/ping-chen.jpg",
     bio:
-      "Dr. Ping Chen is a Full Professor of Computer Engineering and the Director of Artificial Intelligence Lab at the University of Massachusetts Boston. His research interests include Artificial Intelligence, Natural Language Processing, and Machine Learning. Dr. Chen has published over 100 papers in major Data Mining, Artificial Intelligence, and Machine Learning conferences and journals.",
+      "Dr. Ping Chen is a Full Professor of Computer Engineering and Director of the Artificial Intelligence Lab at UMass Boston. His work spans artificial intelligence, natural language processing, and machine learning.",
   },
   {
     name: "Professor Xiaohui Liang",
-    role: "Professor",
-    photoUrl: "",
+    role: "Associate Professor",
+    photoUrl: "/images/xiaohui-liang.jpg",
     bio:
-      "Dr. Xiaohui Liang is an Associate Professor with the Department of Computer Science at the University of Massachusetts, Boston (UMB), where he leads the Mobile Computing and Privacy (MobCP) Lab. His research interests include mobile health, mobile systems, speech and language processing, and network security. He has published over 150 papers and is an IEEE Fellow and an ACM Member.",
+      "Dr. Xiaohui Liang is an Associate Professor of Computer Science at UMass Boston and leads the Mobile Computing and Privacy Lab. His research includes mobile systems, speech and language processing, and privacy.",
   },
   {
     name: "Professor Shichao Pei",
-    role: "Professor",
-    photoUrl: "",
+    role: "Assistant Professor",
+    photoUrl: "/images/shichao-pei.jpg",
     bio:
-      "Dr. Pei is an Assistant Professor in the Department of Computer Science at the University of Massachusetts Boston. His research interests broadly lie in machine learning and AI, in particular foundation models, AI safety, AI agent.",
+      "Dr. Shichao Pei is an Assistant Professor in Computer Science at UMass Boston whose research interests include machine learning, foundation models, and AI safety.",
   },
   {
     name: "Professor Bo Sheng",
     role: "Professor",
-    photoUrl: "",
+    photoUrl: "/images/bo-sheng.jpg",
     bio:
-      "Dr. Bo Sheng is a professor of computer science at UMass Boston. His research interests include edge computing, mobile computing, cloud computing, and cybersecurity. He directs the newly funded Networked AI Lab, focusing on robotics and collaborative AI.",
+      "Dr. Bo Sheng is a professor of computer science at UMass Boston. His research includes edge computing, mobile systems, cloud computing, robotics, and cybersecurity.",
   },
   {
     name: "Professor Yinxin Wan",
-    role: "Professor",
-    photoUrl: "",
+    role: "Assistant Professor",
+    photoUrl: "/images/yinxin-wan.jpg",
     bio:
-      "Dr. Wan is an Assistant Professor in the Department of Computer Science at UMass Boston. His research interests include secure and trustworthy AI, IoT, and data-driven networked systems.",
+      "Dr. Yinxin Wan is an Assistant Professor in Computer Science at UMass Boston. His interests include secure and trustworthy AI, IoT, and networked systems.",
   },
   {
     name: "Chengjie Zheng",
     role: "Graduate Student Assistant",
-    photoUrl: "",
+    photoUrl: "/images/chengjie-zheng.jpg",
     bio:
-      "",
+      "Supports instruction, mentoring, and hands-on student learning throughout the camp experience.",
   },
   {
     name: "Ajanee Igharo",
     role: "Student Assistant",
-    photoUrl: "",
+    photoUrl: "/images/ajanee-igharo.jpg",
     bio:
-      "Ajanee Igharo is a student leader and emerging AI and business strategist passionate about expanding equitable access to technology, education, and economic opportunity. She studies at UMass Boston, developing expertise in organizational behavior, data analytics, and strategic problem-solving. She serves on the Student Advisory Council of the PEAAII, supporting student engagement, program development, and initiatives that broaden access to AI education, and has contributed to applied AI research projects, including an award-winning hackathon on cultural competency in public health communication. Ajanee is motivated by a mission to bridge technology, social impact, and strategy, and is pursuing a career in consulting and AI-driven organizational transformation with a focus on strategy, operations, workforce development, and AI-enabled organizational improvement.",
+      "Ajanee supports student engagement, program development, and inclusive access to AI education through mentorship and program coordination.",
   },
   {
     name: "Dora Nguyen",
     role: "Student Assistant",
-    photoUrl: "",
+    photoUrl: "/images/dora-nguyen.jpg",
     bio:
-      "",
+      "Supports student learning, activities, and program operations throughout the summer camp.",
   },
   {
     name: "Rebaz Kamal",
     role: "Student Assistant",
-    photoUrl: "",
+    photoUrl: "/images/rebaz-kamal.jpg",
     bio:
-      "",
+      "Supports camp logistics, student mentoring, and hands-on project activities across the program.",
   },
 ];
 ---
@@ -120,86 +165,95 @@ const team = [
 <!doctype html>
 <html lang="en">
   <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>PEAAII AI Summer Camp for High School Students | UMass Boston, Boston MA</title>
+    <title>{title}</title>
 
-  <meta
-    name="description"
-    content="Join UMass Boston's AI Summer Camp for high school students. Explore artificial intelligence, machine learning, coding, and hands-on projects in Boston through a flexible 2026 summer program."
-  />
+    <meta
+      name="description"
+      content="Join UMass Boston's PEAAII AI Summer Camp for high school students. A beginner-friendly hybrid AI program with labs, projects, mentorship, and weekly syllabi."
+    />
 
-  <link rel="canonical" href="https://umb-ai-institute.github.io/ai-camp-2026/" />
+    <link rel="canonical" href="https://umb-ai-institute.github.io/ai-camp-2026/" />
 
-  <meta name="google-site-verification" content="wBOZATGxiDIc0EO9QJCBz4tmnJ9xgXGehqJou_7qoys" />
+    <meta name="google-site-verification" content="wBOZATGxiDIc0EO9QJCBz4tmnJ9xgXGehqJou_7qoys" />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://umb-ai-institute.github.io/ai-camp-2026/" />
-  <meta property="og:title" content="AI Summer Camp for High School Students in Boston | UMass Boston" />
-  <meta
-    property="og:description"
-    content="Hands-on AI learning for high school students at UMass Boston. Explore machine learning, coding, and real-world projects."
-  />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://umb-ai-institute.github.io/ai-camp-2026/" />
+    <meta property="og:title" content="PEAAII AI Summer Camp for High School Students | UMass Boston" />
+    <meta
+      property="og:description"
+      content="A hands-on hybrid AI summer camp for high school students with projects, mentorship, and portfolio-building at UMass Boston."
+    />
 
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="AI Summer Camp for High School Students in Boston | UMass Boston" />
-  <meta
-    name="twitter:description"
-    content="Hands-on AI learning for high school students at UMass Boston. Explore machine learning, coding, and real-world projects."
-  />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PEAAII AI Summer Camp for High School Students | UMass Boston" />
+    <meta
+      name="twitter:description"
+      content="A hands-on hybrid AI summer camp for high school students with projects, mentorship, and portfolio-building at UMass Boston."
+    />
 
     <style>
       :root {
-        --bg: #0b1020;
-        --surface: rgba(255, 255, 255, 0.06);
-        --surface-2: rgba(255, 255, 255, 0.1);
-        --text: #e5e7eb;
-        --muted: rgba(229, 231, 235, 0.75);
-        --border: rgba(255, 255, 255, 0.12);
-        --shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+        --bg: #f7f8ff;
+        --bg-soft: #eef2ff;
+        --surface: #ffffff;
+        --surface-2: #f5f7ff;
+        --text: #22304a;
+        --muted: #65748b;
+        --border: #d9def6;
+        --shadow: 0 16px 40px rgba(82, 94, 164, 0.12);
 
-        --brand-1: #60a5fa; /* blue */
-        --brand-2: #a78bfa; /* violet */
-        --accent: #34d399; /* green */
+        /* flyer-inspired palette */
+        --brand-1: #6b7cff;
+        --brand-2: #8c63ff;
+        --brand-3: #b48cff;
+        --accent: #4ca7ff;
+        --accent-soft: #e9f2ff;
+        --gold: #f0c64f;
+        --green: #7bd3a5;
       }
 
-      * { box-sizing: border-box; }
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
 
       body {
         margin: 0;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         color: var(--text);
-        background: radial-gradient(
-            900px 500px at 15% 10%,
-            rgba(96, 165, 250, 0.26),
-            transparent 60%
-          ),
-          radial-gradient(
-            800px 450px at 90% 15%,
-            rgba(167, 139, 250, 0.22),
-            transparent 55%
-          ),
-          radial-gradient(
-            900px 600px at 35% 100%,
-            rgba(52, 211, 153, 0.18),
-            transparent 60%
-          ),
-          linear-gradient(180deg, #070a14, #0b1020);
+        background:
+          radial-gradient(circle at top left, rgba(140, 99, 255, 0.18), transparent 34%),
+          radial-gradient(circle at top right, rgba(76, 167, 255, 0.16), transparent 30%),
+          linear-gradient(180deg, #fbfcff 0%, #f3f5ff 100%);
         min-height: 100vh;
       }
 
-      a { color: inherit; }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
 
       .container {
-        max-width: 1050px;
+        max-width: 1140px;
         margin: 0 auto;
         padding: 0 1.25rem;
       }
 
-      /* Top nav */
-      .topbar { padding: 1rem 0; }
+      .topbar {
+        padding: 1rem 0 0.75rem;
+      }
+
       .topbar-inner {
         display: flex;
         align-items: center;
@@ -207,205 +261,278 @@ const team = [
         gap: 1rem;
         flex-wrap: wrap;
       }
+
       .brand {
         display: flex;
         flex-direction: column;
-        line-height: 1.15;
+        gap: 0.15rem;
       }
-      .brand strong { font-size: 0.95rem; letter-spacing: 0.01em; }
-      .brand span { font-size: 0.85rem; color: var(--muted); }
+
+      .brand strong {
+        font-size: 0.95rem;
+        letter-spacing: 0.02em;
+        color: var(--brand-2);
+        text-transform: uppercase;
+      }
+
+      .brand span {
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
 
       .navlinks {
         display: flex;
-        gap: 0.75rem;
+        gap: 0.65rem;
         flex-wrap: wrap;
-        align-items: center;
       }
 
       .navlinks a {
-        text-decoration: none;
-        padding: 0.45rem 0.75rem;
+        padding: 0.55rem 0.85rem;
         border-radius: 999px;
+        background: rgba(255, 255, 255, 0.88);
         border: 1px solid var(--border);
-        background: rgba(255, 255, 255, 0.06);
         color: var(--muted);
-        font-size: 0.9rem;
+        font-size: 0.92rem;
+        font-weight: 600;
+        box-shadow: 0 6px 18px rgba(82, 94, 164, 0.06);
       }
-      .navlinks a:hover { background: rgba(255, 255, 255, 0.1); color: var(--text); }
 
-      /* Hero */
-      header.hero { padding: 1.5rem 0 1.25rem; }
+      .navlinks a:hover {
+        color: var(--brand-2);
+        border-color: rgba(140, 99, 255, 0.38);
+      }
+
+      header.hero {
+        padding: 1rem 0 1.5rem;
+      }
 
       .hero-card {
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(246, 248, 255, 0.98));
         border: 1px solid var(--border);
-        background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0.08),
-          rgba(255, 255, 255, 0.04)
-        );
-        border-radius: 20px;
-        padding: 2rem;
+        border-radius: 28px;
         box-shadow: var(--shadow);
-        position: relative;
         overflow: hidden;
+        position: relative;
       }
 
-      .hero-card:before {
+      .hero-card::before {
         content: "";
         position: absolute;
-        inset: -2px;
-        background: radial-gradient(
-            550px 220px at 20% 0%,
-            rgba(96, 165, 250, 0.35),
-            transparent 60%
-          ),
-          radial-gradient(
-            450px 220px at 90% 10%,
-            rgba(167, 139, 250, 0.28),
-            transparent 55%
-          );
+        inset: 0;
+        background:
+          linear-gradient(90deg, rgba(107, 124, 255, 0.08), rgba(140, 99, 255, 0.08)),
+          radial-gradient(circle at 20% 0%, rgba(107, 124, 255, 0.18), transparent 28%),
+          radial-gradient(circle at 85% 10%, rgba(140, 99, 255, 0.16), transparent 26%);
         pointer-events: none;
-        opacity: 0.9;
       }
 
       .hero-grid {
         position: relative;
         display: grid;
-        grid-template-columns: 1.3fr 0.7fr;
-        gap: 1.5rem;
-        align-items: start;
+        grid-template-columns: 1.3fr 0.85fr;
+        gap: 1.25rem;
+        padding: 2rem;
+        align-items: stretch;
       }
 
-      @media (max-width: 900px) {
-        .hero-grid { grid-template-columns: 1fr; }
+      @media (max-width: 920px) {
+        .hero-grid {
+          grid-template-columns: 1fr;
+        }
       }
 
-      h1 {
-        margin: 0.4rem 0 0.75rem;
-        font-size: clamp(2rem, 4vw, 3rem);
+      .eyebrow {
+        display: inline-block;
+        padding: 0.35rem 0.8rem;
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--brand-1), var(--brand-2));
+        color: white;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 0.75rem;
+      }
+
+      h1, h2, h3 {
+        margin: 0;
         letter-spacing: -0.02em;
       }
 
+      h1 {
+        font-size: clamp(2.2rem, 4.4vw, 3.9rem);
+        line-height: 0.98;
+        color: var(--brand-2);
+      }
+
+      .hero-slogan {
+        margin-top: 0.45rem;
+        color: var(--brand-1);
+        font-size: 1.15rem;
+        font-weight: 800;
+      }
+
       .subhead {
-        margin: 0 0 1.25rem;
+        margin: 1rem 0 0;
+        max-width: 62ch;
         color: var(--muted);
         font-size: 1.05rem;
-        line-height: 1.6;
-        max-width: 65ch;
+        line-height: 1.7;
       }
 
       .cta-row {
         display: flex;
         flex-wrap: wrap;
         gap: 0.75rem;
-        margin-top: 1rem;
+        margin-top: 1.35rem;
       }
 
       .btn {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        gap: 0.5rem;
-        border-radius: 12px;
-        padding: 0.75rem 1rem;
+        min-height: 48px;
+        padding: 0.85rem 1.15rem;
+        border-radius: 14px;
         border: 1px solid var(--border);
-        background: rgba(255, 255, 255, 0.08);
-        text-decoration: none;
-        font-weight: 650;
-        transition: transform 120ms ease, background 120ms ease;
+        background: white;
+        font-weight: 700;
+        transition: 140ms ease;
+        box-shadow: 0 8px 20px rgba(82, 94, 164, 0.08);
       }
 
       .btn:hover {
         transform: translateY(-1px);
-        background: rgba(255, 255, 255, 0.11);
       }
 
       .btn.primary {
-        border-color: rgba(96, 165, 250, 0.35);
-        background: linear-gradient(
-          135deg,
-          rgba(96, 165, 250, 0.28),
-          rgba(167, 139, 250, 0.22)
-        );
+        background: linear-gradient(135deg, var(--brand-1), var(--brand-2));
+        color: white;
+        border-color: transparent;
       }
 
-      .btn.primary:hover {
-        background: linear-gradient(
-          135deg,
-          rgba(96, 165, 250, 0.34),
-          rgba(167, 139, 250, 0.28)
-        );
+      .btn.secondary {
+        background: var(--surface);
+        color: var(--brand-2);
       }
 
+      .hero-side {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.95rem;
+      }
+
+      .price-card,
       .info-box {
         border: 1px solid var(--border);
-        background: rgba(255, 255, 255, 0.06);
-        border-radius: 16px;
-        padding: 1rem;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 10px 24px rgba(82, 94, 164, 0.08);
+        padding: 1.1rem;
       }
 
-      .info-title {
-        margin: 0 0 0.75rem;
-        font-size: 0.95rem;
-        color: rgba(229, 231, 235, 0.95);
+      .price-card {
+        background: linear-gradient(180deg, #ffffff, #f4f1ff);
       }
 
-      .info-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: grid;
-        gap: 0.65rem;
-      }
-
-      .info-item {
-        display: grid;
-        grid-template-columns: 90px 1fr;
-        gap: 0.75rem;
-        align-items: start;
-        padding: 0.65rem 0.75rem;
-        border-radius: 12px;
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-      }
-
-      .info-item strong {
-        color: var(--muted);
-        font-size: 0.85rem;
-        font-weight: 650;
-      }
-
-      /* Sections */
-      main { padding: 0.5rem 0 2.5rem; }
-
-      section { margin-top: 1.75rem; }
-
-      .section-head {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        gap: 1rem;
-        flex-wrap: wrap;
+      .card-label {
+        display: inline-block;
+        padding: 0.35rem 0.75rem;
+        background: linear-gradient(90deg, var(--brand-1), var(--brand-2));
+        color: white;
+        border-radius: 999px;
+        font-size: 0.82rem;
+        font-weight: 700;
         margin-bottom: 0.75rem;
       }
 
+      .price-big {
+        font-size: clamp(2.1rem, 5vw, 3.3rem);
+        line-height: 1;
+        color: var(--brand-2);
+        font-weight: 900;
+      }
+
+      .price-small {
+        color: var(--muted);
+        font-size: 1rem;
+        font-weight: 700;
+      }
+
+      .price-full {
+        margin-top: 0.45rem;
+        color: var(--brand-1);
+        font-size: 1.05rem;
+        font-weight: 800;
+      }
+
+      .quick-grid {
+        display: grid;
+        gap: 0.7rem;
+      }
+
+      .quick-item {
+        display: grid;
+        grid-template-columns: 92px 1fr;
+        gap: 0.7rem;
+        padding: 0.7rem 0.8rem;
+        border-radius: 14px;
+        background: var(--surface-2);
+        border: 1px solid #e7eafe;
+      }
+
+      .quick-item strong {
+        color: var(--brand-2);
+        font-size: 0.88rem;
+      }
+
+      main {
+        padding: 0.2rem 0 3rem;
+      }
+
+      section {
+        margin-top: 1.6rem;
+      }
+
+      .section-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 0.9rem;
+      }
+
       .section-title {
-        margin: 0;
-        font-size: 1.2rem;
-        letter-spacing: -0.01em;
+        font-size: 1.45rem;
+        color: var(--brand-2);
       }
 
       .section-note {
         margin: 0;
         color: var(--muted);
-        font-size: 0.95rem;
+        line-height: 1.65;
+        font-size: 0.98rem;
       }
 
       .card {
         border: 1px solid var(--border);
-        background: rgba(255, 255, 255, 0.06);
-        border-radius: 16px;
-        padding: 1rem;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 20px;
+        padding: 1.15rem;
+        box-shadow: 0 10px 24px rgba(82, 94, 164, 0.06);
+      }
+
+      .stack {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
       }
 
       .grid-3 {
@@ -413,133 +540,237 @@ const team = [
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
       }
+
       @media (max-width: 950px) {
-        .grid-3 { grid-template-columns: 1fr; }
+        .grid-2,
+        .grid-3 {
+          grid-template-columns: 1fr;
+        }
       }
 
-      .stack {
+      .feature-list,
+      .bullets {
+        margin: 0.75rem 0 0;
+        padding-left: 1.1rem;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .pill-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem;
+        margin-top: 0.85rem;
+      }
+
+      .pill {
+        padding: 0.55rem 0.9rem;
+        border-radius: 999px;
+        background: linear-gradient(90deg, #edf2ff, #f4ecff);
+        border: 1px solid #dde2ff;
+        color: var(--brand-2);
+        font-weight: 700;
+        font-size: 0.92rem;
+      }
+
+      .syllabus-grid {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
       }
-    
-      .stack .card {
-        max-width: 900px;
+
+      @media (max-width: 850px) {
+        .syllabus-grid {
+          grid-template-columns: 1fr;
+        }
       }
 
-      .bullets {
-        margin: 0.5rem 0 0;
-        padding-left: 1.15rem;
-        color: var(--muted);
-        line-height: 1.6;
+      .syllabus-card {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        min-height: 100%;
       }
 
-      /* Registration */
-      .reg {
-        border: 1px solid rgba(96, 165, 250, 0.35);
-        background: linear-gradient(
-          135deg,
-          rgba(96, 165, 250, 0.18),
-          rgba(167, 139, 250, 0.12)
-        );
-        border-radius: 18px;
+      .syllabus-card h3 {
+        font-size: 1.08rem;
+        color: var(--brand-2);
+      }
+
+      .syllabus-link {
+        margin-top: auto;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        width: fit-content;
+        padding: 0.7rem 0.95rem;
+        border-radius: 12px;
+        background: linear-gradient(135deg, var(--accent-soft), #f4ecff);
+        color: var(--brand-2);
+        border: 1px solid #dce3ff;
+        font-weight: 700;
+      }
+
+      .program-strip {
+        border: 1px solid #d7defc;
+        background: linear-gradient(135deg, #eef3ff, #f7efff);
+        border-radius: 22px;
         padding: 1.25rem;
+      }
+
+      .program-strip h3 {
+        color: var(--brand-2);
+        margin-bottom: 0.35rem;
+      }
+
+      .reg {
         display: grid;
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 1.25fr 0.75fr;
         gap: 1rem;
         align-items: center;
+        border-radius: 24px;
+        border: 1px solid #d7defc;
+        background: linear-gradient(135deg, rgba(107, 124, 255, 0.12), rgba(140, 99, 255, 0.12));
+        padding: 1.3rem;
+        box-shadow: var(--shadow);
       }
 
-      @media (max-width: 700px) {
-        .reg { grid-template-columns: 1fr; }
+      @media (max-width: 850px) {
+        .reg {
+          grid-template-columns: 1fr;
+        }
       }
 
-      .reg h3 { margin: 0 0 0.25rem; font-size: 1.05rem; }
-      .reg p { margin: 0.25rem 0 0; color: rgba(229,231,235,0.85); line-height: 1.55; }
+      .reg h3 {
+        color: var(--brand-2);
+        margin-bottom: 0.25rem;
+        font-size: 1.2rem;
+      }
+
+      .reg p {
+        margin: 0.25rem 0 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
 
       .reg-meta {
         display: grid;
         gap: 0.5rem;
-        margin-top: 0.5rem;
-        color: var(--muted);
-        font-size: 0.95rem;
+        margin-top: 0.9rem;
       }
 
-      .reg-meta span strong { color: rgba(229,231,235,0.95); }
+      .reg-meta strong {
+        color: var(--brand-2);
+      }
 
-      /* Team cards */
+      .reg-side {
+        display: grid;
+        gap: 0.8rem;
+      }
+
+      .apply-box {
+        background: white;
+        border: 1px solid #d9def6;
+        border-radius: 20px;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .apply-box .big {
+        color: var(--brand-2);
+        font-size: 1.55rem;
+        font-weight: 900;
+        line-height: 1.1;
+      }
+
       .team-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
       }
-      @media (max-width: 1000px) {
-        .team-grid { grid-template-columns: 1fr; }
+
+      @media (max-width: 950px) {
+        .team-grid {
+          grid-template-columns: 1fr;
+        }
       }
 
       .person {
         display: grid;
-        grid-template-columns: 64px 1fr;
-        gap: 0.9rem;
+        grid-template-columns: 84px 1fr;
+        gap: 1rem;
         align-items: start;
       }
 
       .avatar {
-        width: 64px;
-        height: 64px;
-        border-radius: 16px;
-        border: 1px solid rgba(255, 255, 255, 0.14);
-        background: rgba(255, 255, 255, 0.08);
+        width: 84px;
+        height: 84px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid #dfe5ff;
+        background: linear-gradient(135deg, #edf2ff, #f4ecff);
         display: grid;
         place-items: center;
-        color: rgba(229,231,235,0.85);
-        font-weight: 800;
-        letter-spacing: -0.02em;
-        overflow: hidden;
+        color: var(--brand-2);
+        font-size: 1.1rem;
+        font-weight: 900;
       }
 
       .avatar img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        display: block;
       }
 
       .person h3 {
-        margin: 0;
-        font-size: 1.02rem;
+        font-size: 1.06rem;
       }
 
       .role {
-        margin: 0.15rem 0 0.55rem;
-        color: var(--muted);
-        font-size: 0.92rem;
+        margin: 0.18rem 0 0.55rem;
+        color: var(--brand-1);
+        font-weight: 700;
+        font-size: 0.93rem;
       }
 
       .bio {
         margin: 0;
-        color: rgba(229,231,235,0.82);
-        line-height: 1.6;
+        color: var(--muted);
+        line-height: 1.65;
+        font-size: 0.96rem;
       }
 
-      /* Footer */
+      .callout {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+
+      @media (max-width: 900px) {
+        .callout {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .callout .card {
+        background: linear-gradient(180deg, #ffffff, #faf8ff);
+      }
+
       footer {
-        padding: 2rem 0 2.5rem;
-        color: rgba(229, 231, 235, 0.65);
-        font-size: 0.9rem;
+        padding: 2rem 0 2.6rem;
         text-align: center;
+        color: var(--muted);
+        font-size: 0.92rem;
       }
 
       .fineprint {
-        margin-top: 0.5rem;
-        color: rgba(229, 231, 235, 0.55);
-        font-size: 0.85rem;
+        margin-top: 0.45rem;
+        font-size: 0.86rem;
       }
     </style>
   </head>
 
   <body>
-    <!-- Top bar -->
     <div class="container topbar">
       <div class="topbar-inner">
         <div class="brand">
@@ -548,40 +779,53 @@ const team = [
         </div>
 
         <nav class="navlinks" aria-label="Page sections">
-          <a href="#camp-info">Summer Camp Info</a>
-          <a href="#registration">Application</a>
+          <a href="#overview">Overview</a>
+          <a href="#syllabi">Syllabi</a>
+          <a href="#application">Application</a>
           <a href="#team">Meet the Team</a>
         </nav>
       </div>
     </div>
 
-    <!-- Hero -->
     <header class="hero">
       <div class="container">
         <div class="hero-card">
           <div class="hero-grid">
             <div>
-              <h1>{camp.year} {camp.name}</h1>
+              <span class="eyebrow">UMass Boston • Summer 2026</span>
+              <h1>{camp.name}</h1>
+              <p class="hero-slogan">{camp.slogan}</p>
               <p class="subhead">{camp.tagline}</p>
 
               <div class="cta-row">
-                <a class="btn primary" href="#registration">Apply</a>
-                <a class="btn" href="#camp-info">Learn more</a>
-                <a class="btn" href={"mailto:" + camp.contactEmail}>Contact</a>
+                <a class="btn primary" href="#application">Apply Now</a>
+                <a class="btn secondary" href="#syllabi">View Weekly Syllabi</a>
+                <a class="btn secondary" href={`mailto:${camp.contactEmail}`}>Contact Us</a>
               </div>
             </div>
 
-            <aside class="info-box" aria-label="Quick facts">
-              <p class="info-title">Quick facts</p>
-              <ul class="info-list">
-                {camp.quickFacts.map((item) => (
-                  <li class="info-item">
-                    <strong>{item.label}</strong>
-                    <span>{item.value}</span>
-                  </li>
-                ))}
-              </ul>
-            </aside>
+            <div class="hero-side">
+              <div class="price-card">
+                <span class="card-label">Tuition</span>
+                <div class="price-big">$899<span style="font-size: 1.05rem; font-weight: 700;"> / week</span></div>
+                <div class="price-full">{camp.registration.full}</div>
+                <p class="section-note" style="margin-top: 0.7rem;">
+                  Flexible hybrid format with on-campus learning, remote instruction, mentoring, and portfolio-building.
+                </p>
+              </div>
+
+              <aside class="info-box" aria-label="Quick facts">
+                <span class="card-label">Quick Facts</span>
+                <div class="quick-grid">
+                  {camp.quickFacts.map((item) => (
+                    <div class="quick-item">
+                      <strong>{item.label}</strong>
+                      <span>{item.value}</span>
+                    </div>
+                  ))}
+                </div>
+              </aside>
+            </div>
           </div>
         </div>
       </div>
@@ -589,79 +833,178 @@ const team = [
 
     <main>
       <div class="container">
-        <!-- 1) Summer Camp Info -->
-        <section id="camp-info" aria-label="Summer Camp Info">
+        <section id="overview" aria-label="Camp Overview">
           <div class="section-head">
-            <h2 class="section-title">Summer Camp Info</h2>
+            <h2 class="section-title">Program Overview</h2>
+            <p class="section-note">A beginner-friendly AI summer experience designed to build confidence, skills, and research thinking.</p>
           </div>
 
           <div class="stack">
             <div class="card">
-              <h3>About the camp:</h3>
-              <p class="section-note">{camp.description}</p>
+              <h3>About the Camp</h3>
+              <p class="section-note" style="margin-top: 0.6rem;">{camp.description}</p>
             </div>
 
+            <div class="grid-2">
+              <div class="card">
+                <h3>What Students Will Learn</h3>
+                <ul class="feature-list">
+                  {camp.outcomes.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div class="card">
+                <h3>Program Format</h3>
+                <ul class="feature-list">
+                  {camp.formatDetails.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div class="program-strip">
+              <h3>Why Families Choose This Program</h3>
+              <p class="section-note">
+                Students progress from curiosity to creation through structured lectures, guided labs, hands-on practice, and personalized mentorship. By the end of the program, each student develops and presents a final project that can support future academic opportunities, competitions, and college applications.
+              </p>
+
+              <div class="pill-grid">
+                {camp.highlights.map((item) => (
+                  <span class="pill">{item}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section aria-label="Weekly Topics">
+          <div class="section-head">
+            <h2 class="section-title">Weekly Topics</h2>
+            <p class="section-note">Students may enroll in individual weeks or complete the full multi-week experience.</p>
+          </div>
+
+          <div class="grid-2">
             <div class="card">
-              <h3>Weekly Topics:</h3>
-              <ul class="bullets">
-                {camp.bullets.map((b) => (
-                  <li>{b}</li>
+              <h3>Summer Schedule</h3>
+              <ul class="feature-list">
+                {camp.weeklyTopics.map((topic) => (
+                  <li>{topic}</li>
                 ))}
               </ul>
             </div>
 
             <div class="card">
-              <h3>Good to know:</h3>
-              <p class="section-note">
-                Students may begin in any week of the summer camp. Each module is designed to be self-contained, so students who join in Week 2, 3, 4, or 5 will not be behind. <br><br>
+              <h3>What Makes It Special</h3>
+              <ul class="feature-list">
+                <li>Beginner-friendly design for students with little or no research experience</li>
+                <li>Hybrid structure with 2 on-campus days and 3 remote days each week</li>
+                <li>Strong emphasis on projects, presentations, and academic growth</li>
+                <li>Support from professors, graduate mentors, and assistants</li>
+                <li>Food provided on in-person days</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-                Students who attend multiple weeks (especially those who complete the full five-week program) may expand their projects across weeks and build a cumulative AI portfolio.
+        <section id="syllabi" aria-label="Weekly Syllabi">
+          <div class="section-head">
+            <h2 class="section-title">Weekly Syllabi</h2>
+            <p class="section-note">Explore each week’s focus, structure, and sample activities.</p>
+          </div>
+
+          <div class="syllabus-grid">
+            {camp.syllabi.map((s) => (
+              <div class="card syllabus-card">
+                <h3>{s.title}</h3>
+                <p class="section-note">
+                  View the full weekly syllabus, topics, and instructional plan.
+                </p>
+                <a class="syllabus-link" href={s.href} target="_blank" rel="noopener noreferrer">
+                  Open syllabus
+                </a>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section aria-label="Why This Camp Matters">
+          <div class="section-head">
+            <h2 class="section-title">What Students Gain</h2>
+            <p class="section-note">A stronger foundation for future research, summer programs, competitions, and academic storytelling.</p>
+          </div>
+
+          <div class="callout">
+            <div class="card">
+              <h3>Research Readiness</h3>
+              <p class="section-note" style="margin-top: 0.55rem;">
+                Students learn how to ask meaningful questions, test ideas, interpret results, and think in a structured academic way.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Portfolio Development</h3>
+              <p class="section-note" style="margin-top: 0.55rem;">
+                Each student builds project-based work they can use in future applications, competitions, or academic opportunities.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Presentation Experience</h3>
+              <p class="section-note" style="margin-top: 0.55rem;">
+                Students develop confidence by presenting their ideas, explaining their work, and participating in a final showcase.
               </p>
             </div>
           </div>
         </section>
 
-        <!-- 2) Registration Info -->
-        <section id="registration" aria-label="Registration Info">
+        <section id="application" aria-label="Application">
           <div class="section-head">
             <h2 class="section-title">Application</h2>
-            <p class="section-note">Pricing, deadlines, and the official application link</p>
+            <p class="section-note">Pricing, application details, and the official form.</p>
           </div>
 
           <div class="reg">
             <div>
-              <h3>Apply via Google Application Form</h3>
+              <h3>Apply to the 2026 PEAAII AI Summer Camp</h3>
               <p>{camp.registration.note}</p>
 
               <div class="reg-meta">
-                <span>
-                  <strong>Tuition:</strong><br />
-                  Full 5 Weeks: $9,000 (Recommended)<br />
-                  Any 4 Weeks: $7,400<br />
-                  Any 3 Weeks: $5,700<br />
-                  Any 2 Weeks: $3,900<br />
-                  Any 1 Week: $2,000
-                </span>
+                <span><strong>Weekly Tuition:</strong> {camp.registration.weekly}</span>
+                <span><strong>Full Program:</strong> {camp.registration.full}</span>
                 <span><strong>Deadline:</strong> {camp.registration.deadline}</span>
+                <span><strong>Format:</strong> Hybrid — Monday & Friday on campus, Tuesday–Thursday remote</span>
+                <span><strong>Food:</strong> Pizza provided on in-person days</span>
               </div>
             </div>
 
-            <a
-              class="btn primary"
-              href={camp.registration.formUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Open Application Form
-            </a>
+            <div class="reg-side">
+              <div class="apply-box">
+                <div class="big">Apply<br />Today</div>
+                <p class="section-note" style="margin-top: 0.55rem;">
+                  Spots are limited. Early application is encouraged.
+                </p>
+                <div class="cta-row" style="justify-content: center; margin-top: 1rem;">
+                  <a
+                    class="btn primary"
+                    href={camp.registration.formUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Open Application Form
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
-        <!-- 3) Professor/Assistant bios -->
-        <section id="team" aria-label="Professor and Assistant Bios">
+        <section id="team" aria-label="Meet the Team">
           <div class="section-head">
             <h2 class="section-title">Meet the Team</h2>
-            <p class="section-note">Professors and Student Assistants running the camp:</p>
+            <p class="section-note">Faculty and student support staff leading the program.</p>
           </div>
 
           <div class="team-grid">
@@ -670,7 +1013,7 @@ const team = [
                 <div class="person">
                   <div class="avatar" aria-hidden="true">
                     {p.photoUrl ? (
-                      <img src={p.photoUrl} alt={`${p.name} photo`} />
+                      <img src={p.photoUrl} alt={`${p.name} headshot`} />
                     ) : (
                       <span>{p.name.split(" ").map((x) => x[0]).join("").slice(0, 2).toUpperCase()}</span>
                     )}
@@ -679,7 +1022,7 @@ const team = [
                   <div>
                     <h3>{p.name}</h3>
                     <p class="role">{p.role}</p>
-                    {p.bio ? <p class="bio">{p.bio}</p> : <p class="bio" style="color: var(--muted);">Bio coming soon.</p>}
+                    <p class="bio">{p.bio}</p>
                   </div>
                 </div>
               </div>
@@ -693,10 +1036,9 @@ const team = [
       <div class="container">
         © {camp.year} {camp.org}
         <div class="fineprint">
-          Questions? Email <a href={"mailto:" + camp.contactEmail}>{camp.contactEmail}</a>
+          Questions? Email <a href={`mailto:${camp.contactEmail}`}>{camp.contactEmail}</a>
         </div>
       </div>
     </footer>
   </body>
 </html>
-
